@@ -1,7 +1,7 @@
 """Flag feverish readings in a list of ward temperatures."""
 import pandas as pd
 
-THRESHOLD = 38.0     # degrees Celsius: this value and above counts as a fever
+THRESHOLD = 37.8     # degrees Celsius: this value and above counts as a fever
 
 readings = pd.read_csv("ward_temperatures.csv")
 readings["fever"] = readings["temperature_c"] >= THRESHOLD
