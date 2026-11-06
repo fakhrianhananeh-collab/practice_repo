@@ -8,3 +8,4 @@ readings["fever"] = readings["temperature_c"] >= THRESHOLD
 
 print(readings)
 print(f"{readings['fever'].sum()} of {len(readings)} readings are feverish")
+print(len(readings), "readings read")
