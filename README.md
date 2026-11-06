@@ -6,3 +6,4 @@ temperature readings and flags the ones that count as a fever.
 The data in `ward_temperatures.csv` is made up: patient IDs are not real people.
 
 To run it: `python fever_check.py`
+The fever threshold has been lowered to 37.8°C.
