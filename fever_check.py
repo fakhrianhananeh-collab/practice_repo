@@ -7,5 +7,6 @@ readings = pd.read_csv("ward_temperatures.csv")
 readings["fever"] = readings["temperature_c"] >= THRESHOLD
 
 print(readings)
-print(f"{readings['fever'].sum()} of {len(readings)} readings are feverish")
+print(f"Patients checked: {len(readings)}")
+print(f"Patients with feverish temperatures: {readings['fever'].sum()}")
 print(len(readings), "readings read")
